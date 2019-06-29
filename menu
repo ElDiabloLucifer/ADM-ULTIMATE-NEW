@@ -279,7 +279,7 @@ while [[ -z $Key ]]; do
 echo -ne "[Key/Link]: " && read Key
 tput cuu1 && tput dl1
 done
-echo -ne "\033[1;37m$(fun_trans "Verificando key"): "
+echo -ne "\033[1;37m$(fun_trans "TERMINANDO LA INSTALACION ESPERAR UN MOMENTO"): "
 cd ${SCPfrm}
 curl "$Key" &> /dev/null
 if [[ $? = "0" ]]; then
